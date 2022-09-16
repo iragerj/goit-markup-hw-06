@@ -59,39 +59,52 @@
             </button>
             <form class="registration-form" name="registration-form">
               <strong class="registration-text">Залиште свої дані, ми вам передзвонимо</strong>
-               <div class="registration-form-group" role="group">
+              <div class="registration-form-group" role="group">
                 <label class="registration-form-field">
                   <span class="registration-form-label">Ім'я</span>
-                  <input class="registration-form-input" type="text" name="" />
+                  <input class="registration-form-input" type="text" name="data" />
                   <svg class="registration-form-icon" width="18" height="18">
                     <use href="./images/svg/icons.svg#person-black"></use>
                   </svg>
                 </label>
                 <label class="registration-form-field">
                   <span class="registration-form-label">Телефон</span>
-                  <input class="registration-form-input" type="tel" name="" />
+                  <input class="registration-form-input" type="tel" name="data" />
                   <svg class="registration-form-icon" width="18" height="18">
                     <use href="./images/svg/icons.svg#phone-black"></use>
                   </svg>
                 </label>
                 <label class="registration-form-field">
                   <span class="registration-form-label">Пошта</span>
-                  <input class="registration-form-input" type="email" name="" />
+                  <input class="registration-form-input" type="email" name="data" />
                   <svg class="registration-form-icon" width="18" height="18">
                     <use href="./images/svg/icons.svg#email-black"></use>
                   </svg>
                 </label>
                 <label class="registration-field">
                   <span class="registration-form-label">Коментар</span>
-                  <textarea class="registration-comment" name="" rows="5" placeholder="Введіть текст"></textarea>
+                  <textarea
+                    class="registration-comment"
+                    name="comment"
+                    rows="5"
+                    placeholder="Введіть текст"
+                  ></textarea>
                 </label>
-               </div>
+              </div>
               <label class="registration-agreement">
-                <input class="registration-checkbox" type="checkbox" name="" />
+                <input
+                  class="registration-checkbox visually-hidden"
+                  type="checkbox"
+                  name="agreement"
+                />
                 <svg class="register-checkbox-icon" width="16" height="15">
-                  <use href="./images/svg/icons.svg#icon-check"></use>
+                  <use class="icon-checked" href="./images/svg/icons.svg#icon-check"></use>
+                  <use class="icon-unchecked" href="./images/svg/icons.svg#icon-unchecked"></use>
                 </svg>
-                <span class="registration-agreement-label">Погоджуюся з розсилкою та приймаю <a class="registration-link" href=""> Умови договору</a></span>
+                <span class="registration-agreement-label"
+                  >Погоджуюся з розсилкою та приймаю
+                  <a class="registration-link" href="#" target="_blank"> Умови договору</a></span
+                >
               </label>
               <button class="order-btn registration-btn" type="submit">Відправити</button>
             </form>
